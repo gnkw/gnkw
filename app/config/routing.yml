@@ -1,0 +1,5 @@
+gnkw_gnkw:
+    resource: "@GnkwGnkwBundle/Controller/"
+    type:     annotation
+    prefix:   /
+

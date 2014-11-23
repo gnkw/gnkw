@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="{{ 'gnkw.global.description'|trans }}" />
+        <meta name="keywords" content="{{ 'gnkw.global.keywords'|trans }}" />
+        <title>{% block title %}{{ 'gnkw.global.title'|trans }}{% endblock %}</title>
+        <!-- Bootstrap -->
+        <link href="{{ asset('bundles/gnkwgnkw/lib/bootstrap-3.2.0-dist/css/bootstrap.min.css') }}" rel="stylesheet" />
+        <link href="{{ asset('bundles/gnkwgnkw/css/main.css') }}" rel="stylesheet" />
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('bundles/gnkwgnkw/images/ico.ico') }}" />
+    </head>
+    <body>
+        {% set embeded = false %}
+        {% block body %}{% endblock %}
+        {% if not embeded %}
+        <footer>
+            <div class="footer">
+                <div class="container">
+                    <div class="footer-middle">
+                        <p>&copy; <a target="_blank" href="http://www.gnkw.org" title="Gnuk's Network Kernel for Web">GNKW</a> 2014 - Sources on MIT License <a href="https://github.com/gnkw/gnkw"><em class="label label-primary">Fork me on github</em></a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        {% endif %}
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="{{ asset('bundles/gnkwgnkw/lib/jquery-2.1.1.min.js') }}"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="{{ asset('bundles/gnkwldfldfcorp/lib/bootstrap-3.2.0-dist/js/bootstrap.min.js') }}"></script>
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>
