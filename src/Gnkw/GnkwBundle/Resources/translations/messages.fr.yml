@@ -1,0 +1,8 @@
+gnkw:
+  global:
+    title: GNKW
+    description: Gnuk's Network Kernel for Web
+    keywords: gnkw, gnuk, network, kernel, web, anthony, rey
+  page:
+    index:
+      title: Accueil

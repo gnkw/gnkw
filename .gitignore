@@ -11,3 +11,5 @@
 /composer.phar
 *~
 *.kdev4
+/.idea
+*.iml

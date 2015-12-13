@@ -29,7 +29,6 @@ toutes propositions pour améliorer nos services.
 
 ## Qui utilise nos services ?
 
-* [Agenda Étudiant](http://agenda-etudiant.org)
 * [LDFCorp](http://ldfcorp.fr) est un site web proposant des lives de dessins
   en ligne.
 * [LocalizeTeaPot](https://jibiki.univ-savoie.fr/ltpdev/) Permet de retrouver
@@ -37,3 +36,4 @@ toutes propositions pour améliorer nos services.
   [mobile](https://github.com/Gnuk/ltp_client_osm) et d'une version
   [web](https://github.com/Gnuk/ltp_site) incluant une
   [API REST](https://github.com/Gnuk/ltp_site/blob/master/REST.md).
+* [Agenda Étudiant](http://edt.gnkw.org) (Service non mis à jour)
