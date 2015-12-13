@@ -24,7 +24,7 @@ class DefaultController extends Controller
             throw $this->createNotFoundException('Cette page n\'existe pas');
         }
         $text = file_get_contents($path);
-        $html = Parsedown::instance()->parse($text);
+        $html = Parsedown::instance()->text($text);
         return array('html' => $html);
     }
 }
